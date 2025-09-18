@@ -1,0 +1,55 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/kurmato/Desktop/e-commerce/logs/.1a4d600ce4a7b30c1a9bbc0c707fce167bf8385a-audit.json",
+    "files": [
+        {
+            "date": 1757078816412,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-05.log",
+            "hash": "e98b94f4f0e905d11b4c58fdfe52f30d8a4df223d6beaa4e9727a21b15de9342"
+        },
+        {
+            "date": 1757248302710,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-07.log",
+            "hash": "8df645d96c265c774356281b2687d9282c2791fd9156227d2427c9db90a64f09"
+        },
+        {
+            "date": 1757587030355,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-11.log",
+            "hash": "c3c8985222d4ca0e70be7279e5008b2444b00753b31320c422cb7978d92b204f"
+        },
+        {
+            "date": 1757754114489,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-13.log",
+            "hash": "393fd8de57036d9033051f638fd3edb0de94ff7cb09218dd7ffc2696e2418b0a"
+        },
+        {
+            "date": 1757788744287,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-14.log",
+            "hash": "837cb0a6a86268d7995797965da7eb6092a48fff45fd1162cc31f3b0315cb577"
+        },
+        {
+            "date": 1757930112903,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-15.log",
+            "hash": "78abcb67998f6c0825a1d5231f20ca8bf3e647fa14c0690f471b814530d3d383"
+        },
+        {
+            "date": 1758015193345,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-16.log",
+            "hash": "e4dcbe1a042a0e6905956748c1a4558fe02317726ce38b56ca10540ad54ee9ca"
+        },
+        {
+            "date": 1758107755424,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-17.log",
+            "hash": "a69a07777f9500fea91bce4759a9112525278a0c335d9dbb8117fdce683e3ea0"
+        },
+        {
+            "date": 1758187119871,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-18.log",
+            "hash": "a1e86266d681b520b3e4edd15ea848d1369e55ea010dd15793fec97b58cdfe5c"
+        }
+    ],
+    "hashType": "sha256"
+}

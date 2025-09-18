@@ -1,0 +1,55 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/kurmato/Desktop/e-commerce/logs/.b322def49b70e1481d1b21fbfd79d98e3de005eb-audit.json",
+    "files": [
+        {
+            "date": 1757078816409,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-05.log",
+            "hash": "70bf58c1bce4a3103581b118cbe73f29d318e0609cf69dd23642d641292557ab"
+        },
+        {
+            "date": 1757248302708,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-07.log",
+            "hash": "50121757093c2f3d7ff4888754bd764bd00f4eed345913893a1d50bdd1cf4845"
+        },
+        {
+            "date": 1757587030353,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-11.log",
+            "hash": "69e4cc061a03500c650990aeadd1fcc5214176d23e6b53938a5e37eff0f63b81"
+        },
+        {
+            "date": 1757754114487,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-13.log",
+            "hash": "2fb61943a79bab86586cd9d5a126708c420717ca30cb32b7b3fec174ccbd4706"
+        },
+        {
+            "date": 1757788744285,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-14.log",
+            "hash": "83f28a2a60f5bf92852173429535992d67dafeeabc2ae7c1e69cc657f6365cfa"
+        },
+        {
+            "date": 1757930112901,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-15.log",
+            "hash": "b4abf4a0c94c03f9f3dca6547828e3bd606d775b185e510d46dcb452bd156189"
+        },
+        {
+            "date": 1758015193342,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-16.log",
+            "hash": "dca2ad7ce6a08de5200525b0b7ab679bb0b55584e24badde6bae88d12085586e"
+        },
+        {
+            "date": 1758107755422,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-17.log",
+            "hash": "fc0ad979805c0f89260fd166f4e525f3701740f0c3466e2e29c82442e23a678d"
+        },
+        {
+            "date": 1758187119869,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/app-2025-09-18.log",
+            "hash": "7e8fb6afa97fb1e18d5a02890b539ba7557539598030ca08a0e3dc8264900a87"
+        }
+    ],
+    "hashType": "sha256"
+}

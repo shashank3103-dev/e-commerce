@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    image: e-commerce-api:dev
+    container_name: e-commerce-api
+    restart: always
+    ports:
+      - "5001:5000"   # Host=5000 → Container=5000 (match for clarity)
+    env_file:
+      - .env.docker
+    depends_on:
+      db:
+        condition: service_healthy   # API won't start until DB is healthy
+    healthcheck:                      # Check API health
+      test: ["CMD", "wget", "-qO-", "http://localhost:5000/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  db:
+    image: mysql:8
+    container_name: e-commerce-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: style
+      MYSQL_USER: styloaura
+      MYSQL_PASSWORD: shashank
+    ports:
+      - "3307:3306"   # Host=3307 → Container=3306
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:                       # Check MySQL service
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db_data:
