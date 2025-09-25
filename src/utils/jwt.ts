@@ -1,9 +1,11 @@
 import jwt from "jsonwebtoken";
 import { config } from "../config/env";
 
+export type Role = "USER" | "SUBADMIN" | "ADMIN";
+
 export type JwtPayload = {
   sub: string;
-  role: "CUSTOMER" | "SELLER" | "ADMIN";
+  role: Role;
   iat?: number;
   exp?: number;
 };

@@ -49,6 +49,21 @@
             "date": 1758187119871,
             "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-18.log",
             "hash": "a1e86266d681b520b3e4edd15ea848d1369e55ea010dd15793fec97b58cdfe5c"
+        },
+        {
+            "date": 1758532740979,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-22.log",
+            "hash": "6ec24b432469d444969300a5f04f62c5fe536d84e75513dc3f6c3950e1f623a1"
+        },
+        {
+            "date": 1758699774942,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-24.log",
+            "hash": "92f315d540b8f501367d8d02d6663385416ee970742469e2043c0054da9c99c9"
+        },
+        {
+            "date": 1758787478079,
+            "name": "/Users/kurmato/Desktop/e-commerce/logs/error-2025-09-25.log",
+            "hash": "db4cb82ee843cb7ddc5b64e07475023e2f3a1281a5e4296b515c516d0f5e95ef"
         }
     ],
     "hashType": "sha256"

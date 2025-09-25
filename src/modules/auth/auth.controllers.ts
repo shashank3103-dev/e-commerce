@@ -1,43 +1,22 @@
 import { Request, Response } from "express";
 import { AuthService } from "./auth.services";
-import { ok, fail, AppError } from "../../utils/http";
 
 export const AuthController = {
-  sendOtp: async (req: Request, res: Response) => {
-    try {
-      const { email } = req.body;
-      if (!email) throw new AppError("Email is required", 422);
-      const result = await AuthService.sendOtp(email);
-      return res.json(ok(result, "OTP sent successfully"));
-    } catch (err: any) {
-      if (err instanceof AppError)
-        return res.status(err.status).json(fail(err.message, err.status, err.details));
-      return res.status(500).json(fail("Internal Server Error", 500, err.message));
-    }
+  async sendOtp(req: Request, res: Response) {
+    const { email } = req.body;
+    if (!email) return res.status(400).json({ success: false, message: "Email required" });
+
+    const result = await AuthService.sendOtp(email);
+    res.json({ success: true, message: "OTP sent", data: result });
   },
 
-  verifyOtp: async (req: Request, res: Response) => {
+  async verifyOtp(req: Request, res: Response) {
     try {
       const { email, otp } = req.body;
-      if (!email || !otp) throw new AppError("Email and OTP are required", 422);
       const result = await AuthService.verifyOtp(email, otp);
-      return res.json(ok(result, "OTP verified successfully"));
+      res.json({ success: true, message: "OTP verified", data: result });
     } catch (err: any) {
-      if (err instanceof AppError)
-        return res.status(err.status).json(fail(err.message, err.status, err.details));
-      return res.status(500).json(fail("Internal Server Error", 500, err.message));
+      res.status(400).json({ success: false, message: err.message });
     }
   },
-
-  // profile: async (req: Request, res: Response) => {
-  //   try {
-  //     const userId = parseInt(req.user!.sub);
-  //     const user = await AuthService.getProfile(userId);
-  //     return res.json(ok(user, "Profile fetched successfully"));
-  //   } catch (err: any) {
-  //     if (err instanceof AppError)
-  //       return res.status(err.status).json(fail(err.message, err.status, err.details));
-  //     return res.status(500).json(fail("Internal Server Error", 500, err.message));
-  //   }
-  // },
-};
+}

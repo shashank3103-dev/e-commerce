@@ -14,7 +14,9 @@ app.get("/api/v1/ping", (_req, res) => {
   res.json({ success: true, message: "pong 🏓 - API is working!" });
 });
 app.use("/api/v1", mainRoutes);
-
+app.get("/", (_req, res) => {
+  res.json({ success: true, message: "Welcome 🚀 Use /api/v1 for endpoints" });
+});
 
 // 404
 app.use((_req, res) =>

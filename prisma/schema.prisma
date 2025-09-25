@@ -5,15 +5,20 @@ generator client {
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
-  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+enum Role {
+  USER
+  SUBADMIN
+  ADMIN
 }
 
 model User {
   id         Int      @id @default(autoincrement())
   email      String   @unique
-  role       String   @default("user") // user | admin | subadmin
-  otp        String?   // nullable because OTP isn’t always set
-  otpExpires DateTime? // nullable, OTP expiry time
+  role       Role     @default(USER)   // 👈 must use enum here
+  otp        String?
+  otpExpires DateTime?
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 }
